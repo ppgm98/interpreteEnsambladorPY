@@ -1,0 +1,15 @@
+mov a,1
+mov b,1
+push a
+push b
+mov d,1
+
+ciclo:
+
+mov c,a
+add a,b
+push a
+mov b,c
+inc d
+cmp d,10
+jne ciclo
