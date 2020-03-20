@@ -2,6 +2,9 @@
 variables={}
 stack=[]
 
+def buebos():
+    print("feature1")
+
 def checkOpcode(linea):
     if linea[0]=="mov":
        linea[1]=linea[1].split(',')
@@ -16,6 +19,10 @@ def checkOpcode(linea):
     
     elif linea[0]=="push":
         stack.append(variables[linea[1]])
+
+    elif linea[0]=="cmp":
+        linea[1]=linea[1].split(',')
+        compare1=int()
 
 
 def runCode(archivo):
