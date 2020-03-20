@@ -2,8 +2,6 @@
 variables={}
 stack=[]
 
-def buebos():
-    print("feature1")
 
 def checkOpcode(linea):
     if linea[0]=="mov":
